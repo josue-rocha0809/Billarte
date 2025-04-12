@@ -1,0 +1,21 @@
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body, div, nav, section, main, footer {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}

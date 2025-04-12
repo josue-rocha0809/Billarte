@@ -1,0 +1,41 @@
+.footer {
+    background-color: #000;
+    color: #d4af37;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    border-top: 2px solid #d4af37;
+  }
+  
+  .footer-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-icons a {
+    color: #d4af37;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    transition: transform 0.2s ease;
+  }
+  
+  .footer-icons a:hover {
+    transform: scale(1.05);
+    color: #fff;
+  }
+  
+  .icon {
+    font-size: 1.4rem;
+  }
+  
