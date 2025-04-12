@@ -7,7 +7,6 @@ import { Billar } from "./pages/Billar";
 import { Carambola } from "./pages/Carambola";
 import { Futbolitos } from "./pages/Futbolitos";
 import { Hockey } from "./pages/Hockey";
-import { Home } from "./pages/Home";
 import { Cartas } from "./pages/Cartas";
 import { PingPong } from "./pages/PingPong";
 import { Navbar } from "./components/Navbar/Navbar";
@@ -19,7 +18,7 @@ export default function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Billar />} />
         <Route path="/mesas-billar" element={<Billar />} />
         <Route path="/futbolitos" element={<Futbolitos />} />
         <Route path="/ping-pong" element={<PingPong />} />
