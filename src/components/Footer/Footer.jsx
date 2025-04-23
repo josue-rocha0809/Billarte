@@ -12,7 +12,15 @@ export const Footer = () => {
           rel="noopener noreferrer"
         >
           <FaWhatsapp className="icon" />
-          <span>333 872 0017</span>
+          <span>33 2050 3791</span>
+        </a>
+        <a
+          href="https://wa.me/523329833915"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaWhatsapp className="icon" />
+          <span>33 2050 3791</span>
         </a>
         <a
           href="https://www.instagram.com/billartegdl"

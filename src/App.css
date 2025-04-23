@@ -1,0 +1,20 @@
+/* App.css */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    border: 5px solid red
+  }
+  
+  .main-content {
+    flex: 1; /* Hace que el contenido principal ocupe todo el espacio disponible */
+    padding-top: 0px !important ; /* Espaciado opcional */
+    border: 5px solid red
+  }
+  
+  
+  @media (min-width: 768px) {
+    .main-content {
+      padding-top: 80px; 
+    }
+  }
