@@ -87,7 +87,7 @@ export const poolTables = [
         id: 13,
         type:"pool",
         title: "Mali",
-        image: "/assets/poolTables/mali.png",
+        image: "/assets/poolTables/mali.jpeg",
         description: "Patrones africanos y colores tierra.",  
       },
       {
@@ -136,7 +136,7 @@ export const poolTables = [
         id: 20,
         type:"pool",
         title: "Tokio",
-        image: "/assets/poolTables/tokio.png",
+        image: "/assets/poolTables/tokio.jpeg",
         description: "Futurista con influencia japonesa.",  
       },
       {
@@ -157,7 +157,7 @@ export const poolTables = [
         id: 23,
         type:"pool",
         title: "Urus",
-        image: "/assets/poolTables/urus.png",
+        image: "/assets/poolTables/urus.jpeg",
         description: "Lujo moderno con inspiración automotriz.",  
       },
       {
