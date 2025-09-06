@@ -2,16 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Página principal -->
   <url>
-    <loc>https://billarte.vercel.app/</loc>
+    <loc>https://billarte.com/</loc>
     <lastmod>2025-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-  </url>
-  <!-- Ejemplo de otra ruta -->
-  <url>
-    <loc>https://billarte.vercel.app/contacto</loc>
-    <lastmod>2025-08-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 </urlset>
