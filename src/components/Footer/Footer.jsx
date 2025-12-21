@@ -7,20 +7,20 @@ export const Footer = () => {
       <div className="footer-logo">BILLARTE</div>
       <div className="footer-icons">
         <a
-          href="https://wa.me/523338720017"
+          href="https://wa.me/523332560059"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaWhatsapp className="icon" />
-          <span>33 2050 3791</span>
+          <span>33 3256 0059</span>
         </a>
         <a
-          href="https://wa.me/523329833915"
+          href="https://wa.me/523314507923"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaWhatsapp className="icon" />
-          <span>33 2050 3791</span>
+          <span>33 1450 7923</span>
         </a>
         <a
           href="https://www.instagram.com/billartegdl"
