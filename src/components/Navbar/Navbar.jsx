@@ -57,12 +57,12 @@ export const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/mesas-de-ping-pong" onClick={toggleMenu}>
+              <Link to="/ping-pong" onClick={toggleMenu}>
                 Mesas de Ping Pong
               </Link>
             </li>
             <li>
-              <Link to="/mesas-de-cartas" onClick={toggleMenu}>
+              <Link to="/mesas-cartas" onClick={toggleMenu}>
                 Mesas de Cartas
               </Link>
             </li>
@@ -72,12 +72,12 @@ export const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/mesas-de-hockey" onClick={toggleMenu}>
+              <Link to="/hockey" onClick={toggleMenu}>
                 Mesas de Hockey
               </Link>
             </li>
             <li>
-              <Link to="/accesorios" onClick={toggleMenu}>
+              <Link to="/extras" onClick={toggleMenu}>
                 Accesorios
               </Link>
             </li>

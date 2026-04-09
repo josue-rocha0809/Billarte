@@ -30,11 +30,11 @@ export default function App() {
           <Route path="/" element={<Billar />} />
           <Route path="/mesas-de-billar" element={<Billar />} />
           <Route path="/futbolitos" element={<Futbolitos />} />
-          <Route path="/mesas-de-ping-pong" element={<PingPong />} />
-          <Route path="/mesas-de-cartas" element={<Cartas />} />
+          <Route path="/ping-pong" element={<PingPong />} />
+          <Route path="/mesas-cartas" element={<Cartas />} />
           <Route path="/carambola" element={<Carambola />} />
-          <Route path="/mesas-de-hockey" element={<Hockey />} />
-          <Route path="/accesorios" element={<Extras />} />
+          <Route path="/hockey" element={<Hockey />} />
+          <Route path="/extras" element={<Extras />} />
         </Routes>
       </div>
       <Footer />
