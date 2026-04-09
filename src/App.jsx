@@ -10,20 +10,31 @@ import { Extras } from "./pages/Extras";
 import { Footer } from "./components/Footer/Footer";
 import "./App.css"; // Asegúrate de crear este archivo
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 export default function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  }, []);
+
   return (
     <div className="app-container">
       <Navbar />
       <div className="main-content">
         <Routes>
           <Route path="/" element={<Billar />} />
-          <Route path="/mesas-billar" element={<Billar />} />
+          <Route path="/mesas-de-billar" element={<Billar />} />
           <Route path="/futbolitos" element={<Futbolitos />} />
-          <Route path="/ping-pong" element={<PingPong />} />
-          <Route path="/mesas-cartas" element={<Cartas />} />
+          <Route path="/mesas-de-ping-pong" element={<PingPong />} />
+          <Route path="/mesas-de-cartas" element={<Cartas />} />
           <Route path="/carambola" element={<Carambola />} />
-          <Route path="/hockey" element={<Hockey />} />
-          <Route path="/extras" element={<Extras />} />
+          <Route path="/mesas-de-hockey" element={<Hockey />} />
+          <Route path="/accesorios" element={<Extras />} />
         </Routes>
       </div>
       <Footer />

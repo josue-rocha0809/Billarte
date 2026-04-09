@@ -1,65 +1,147 @@
+/* CONTENEDOR GENERAL */
+.gallery-container {
+  margin-top: 120px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+/* GRID */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 1rem 0;
+}
+
+/* TARJETA */
+.gallery-item {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+
+.gallery-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* CONTENEDOR DE IMAGEN */
 .gallery-image-container {
-    width: 100%;
-    height: 250px; 
-    overflow: hidden; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f0f0f0; 
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+
+/* IMAGEN */
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.4s ease;
+}
+
+/* EFECTO HOVER EN IMAGEN */
+.gallery-item:hover .gallery-image {
+  transform: scale(1.08);
+}
+
+/* INFO */
+.gallery-info {
+  padding: 15px;
+  background: #fff;
+}
+
+/* TÍTULO PRODUCTO */
+.gallery-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #1a1a1a;
+}
+
+/* DESCRIPCIÓN */
+.gallery-info p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* TITULO PRINCIPAL */
+.gallery-container h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+}
+
+/* LINEA DECORATIVA (lujo) */
+.gallery-container h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #d4af37;
+  margin-top: 10px;
+}
+
+/* TEXTO GENERAL */
+.gallery-container p {
+  font-family: 'Poppins', sans-serif;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+
+  .gallery-container {
+    padding: 10px;
+    margin-top: 70px
   }
-  .gallery-container{
-     margin-top: 120px;
-  }
-  
-  .gallery-image {
-    width: 100%;
-    object-fit: cover;
-    object-position: center; 
-  }
+
   .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5rem;
-    padding: 1rem;
+    grid-template-columns: 1fr;
+    gap: 18px;
   }
-.mesa-image {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    display: block; 
-  }
-  
+
   .gallery-item {
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 16px;
     overflow: hidden;
-    transition: transform 0.3s ease;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    transition: transform 0.2s ease;
   }
-  
-  .gallery-item:hover {
-    transform: scale(1.03);
+
+  .gallery-item:active {
+    transform: scale(0.97);
   }
-  
-  .gallery-image {
-    width: 100%;
+
+  .gallery-image-container {
     height: 200px;
-    object-fit: cover;
   }
-  
+
   .gallery-info {
-    padding: 1rem;
-    background: #f9f9f9;
+    padding: 14px;
   }
-  
+
   .gallery-info h3 {
-    margin: 0 0 0.5rem 0;
-    color: #333;
+    font-size: 18px;
   }
-  
-  /* Responsive para móviles */
-  @media (max-width: 600px) {
-    .gallery-grid {
-      grid-template-columns: 1fr;
-    }
+
+  .gallery-info p {
+    font-size: 14px;
+    color: #666;
   }
-  
+}

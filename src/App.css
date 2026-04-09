@@ -11,7 +11,13 @@
     padding-top: 0px !important ; /* Espaciado opcional */
     border: 5px solid red
   }
-  
+  html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-tap-highlight-color: transparent;
+}
   
   @media (min-width: 768px) {
     .main-content {

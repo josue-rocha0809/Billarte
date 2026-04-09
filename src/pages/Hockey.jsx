@@ -22,7 +22,9 @@ export const Hockey = () => {
              <div 
                key={item.id} 
                className="gallery-item" 
+                role="button"
                onClick={() => openModal(item)}
+               alt={`Mesa de hockey ${item.title} en México`}
              >
                <div className="gallery-image-container">
                  <img 

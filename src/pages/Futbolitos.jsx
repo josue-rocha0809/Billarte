@@ -22,6 +22,8 @@ export const Futbolitos = () => {
            <div 
              key={item.id} 
              className="gallery-item" 
+              role="button"
+              alt={`Mesa de futbolitos ${item.title} en México`}
              onClick={() => openModal(item)}
            >
              <div className="gallery-image-container">

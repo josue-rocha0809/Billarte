@@ -22,6 +22,8 @@ export const PingPong = () => {
               <div 
                 key={item.id} 
                 className="gallery-item" 
+                 role="button"
+                 alt={`Mesa de Ping-Pong ${item.title} en México`}
                 onClick={() => openModal(item)}
               >
                 <div className="gallery-image-container">
@@ -31,7 +33,7 @@ export const PingPong = () => {
                     className="gallery-image"
                   />
                   {item.images && (
-                    <div className="gallery-badge">+{item.images.length}</div>
+                    <div className="gallery-badge">{item.images.length}</div>
                   )}
                 </div>
                 <div className="gallery-info">

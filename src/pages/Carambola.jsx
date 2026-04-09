@@ -22,6 +22,7 @@ export const Carambola = () => {
           <div 
             key={item.id} 
             className="gallery-item" 
+             role="button"
             onClick={() => openModal(item)}
           >
             <div className="gallery-image-container">

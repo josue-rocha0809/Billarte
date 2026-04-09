@@ -1,9 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -16,12 +27,12 @@ export const Navbar = () => {
   };
   return (
     <>
-      <div 
-        className={`menu-overlay ${isOpen ? "active" : ""}`} 
+      <div
+        className={`menu-overlay ${isOpen ? "active" : ""}`}
         onClick={closeMenu}
       />
-      
-      <nav className="navbar">
+
+      <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMenu}>
             <span className="logo-main">BILLARTE</span>
@@ -34,28 +45,42 @@ export const Navbar = () => {
             <div className={`bar ${isOpen ? "open" : ""}`}></div>
           </div>
 
-        <ul className={`nav-links ${isOpen ? "active" : ""}`}>
-          <li>
-            <Link to="/mesas-billar" onClick={toggleMenu}>Mesas de Billar</Link>
-          </li>
-          <li>
-            <Link to="/futbolitos" onClick={toggleMenu}>Futbolitos</Link>
-          </li>
-          <li>
-            <Link to="/ping-pong" onClick={toggleMenu}>Ping Pong</Link>
-          </li>
-          <li>
-            <Link to="/mesas-cartas" onClick={toggleMenu}>Mesas de Cartas</Link>
-          </li>
-          <li>
-            <Link to="/carambola" onClick={toggleMenu}>Carambola</Link>
-          </li>
-          <li>
-            <Link to="/hockey" onClick={toggleMenu}>Hockey</Link>
-          </li>
-          <li>
-            <Link to="/extras" onClick={toggleMenu}>Extras</Link>
-          </li>
+          <ul className={`nav-links ${isOpen ? "active" : ""}`}>
+            <li>
+              <Link to="/mesas-de-billar" onClick={toggleMenu}>
+                Mesas de Billar
+              </Link>
+            </li>
+            <li>
+              <Link to="/futbolitos" onClick={toggleMenu}>
+                Futbolitos
+              </Link>
+            </li>
+            <li>
+              <Link to="/mesas-de-ping-pong" onClick={toggleMenu}>
+                Mesas de Ping Pong
+              </Link>
+            </li>
+            <li>
+              <Link to="/mesas-de-cartas" onClick={toggleMenu}>
+                Mesas de Cartas
+              </Link>
+            </li>
+            <li>
+              <Link to="/carambola" onClick={toggleMenu}>
+                Carambola
+              </Link>
+            </li>
+            <li>
+              <Link to="/mesas-de-hockey" onClick={toggleMenu}>
+                Mesas de Hockey
+              </Link>
+            </li>
+            <li>
+              <Link to="/accesorios" onClick={toggleMenu}>
+                Accesorios
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

@@ -1,82 +1,84 @@
 :root {
-  --bg-dark: #000; 
-  --gold: #D4AF37;     
-  --gold-hover: #FFD700; 
+  --bg-dark: #000;
+  --gold: #D4AF37;
+  --gold-hover: #FFD700;
   --text-light: #F5F5F5;
 }
 
+/* NAVBAR */
 .navbar {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  background-color: var(--bg-dark);
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
   z-index: 1000;
 }
 
-
+/* CONTENEDOR */
 .navbar-container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
+  margin: auto;
+  padding: 1rem 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* LOGO */
 .navbar-logo {
+  text-decoration: none;
+  color: var(--gold);
+  font-family: 'Playfair Display', serif;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-decoration: none;
-  color: #d4af37;
-  font-family: 'Georgia', serif;
-  padding: 10px
 }
 
 .logo-main {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
 .logo-sub {
-  font-size: 1rem;
-  letter-spacing: 3px;
+  font-size: 0.7rem;
+  letter-spacing: 4px;
+  color: rgba(255,255,255,0.7);
 }
 
-
+/* LINKS */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
-  margin: 0;
-  padding: 0;
+  gap: 1.8rem;
 }
 
+/* LINK */
 .nav-links li a {
+  font-family: 'Poppins', sans-serif;
   color: var(--text-light);
   text-decoration: none;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  transition: all 0.3s ease;
+  font-size: 14px;
+  letter-spacing: 1px;
   position: relative;
+  transition: 0.3s;
 }
 
+/* HOVER */
 .nav-links li a:hover {
   color: var(--gold-hover);
 }
 
-/* Efecto subrayado dorado */
+/* UNDERLINE PREMIUM */
 .nav-links li a::after {
-  content: '';
+  content: "";
   position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
   left: 0;
-  background-color: var(--gold);
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
   transition: width 0.3s ease;
 }
 
@@ -84,11 +86,13 @@
   width: 100%;
 }
 
+/* ICONO MENU */
 .menu-icon {
   display: none;
   cursor: pointer;
 }
 
+/* BARS */
 .bar {
   width: 25px;
   height: 3px;
@@ -97,9 +101,9 @@
   transition: 0.4s;
 }
 
+/* ANIMACIÓN X */
 .bar.open:nth-child(1) {
   transform: rotate(-45deg) translate(-5px, 6px);
-  background-color: var(--gold-hover);
 }
 
 .bar.open:nth-child(2) {
@@ -108,10 +112,9 @@
 
 .bar.open:nth-child(3) {
   transform: rotate(45deg) translate(-5px, -6px);
-  background-color: var(--gold-hover);
 }
 
-
+/* MOBILE */
 @media (max-width: 1047px) {
   .menu-icon {
     display: block;
@@ -121,16 +124,15 @@
     position: fixed;
     top: 0;
     right: -100%;
-    width: 70%;
+    width: 75%;
     height: 100vh;
-    background-color: var(--bg-dark);
+    background: rgba(0,0,0,0.95);
+    backdrop-filter: blur(10px);
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding: 2rem;
-    transition: right 0.5s ease;
-    z-index: 1000;
-    border-left: 2px solid var(--gold);
+    align-items: center;
+    transition: right 0.4s ease;
+    border-left: 1px solid var(--gold);
   }
 
   .nav-links.active {
@@ -138,42 +140,51 @@
   }
 
   .nav-links li {
-    margin: 1rem 0;
+    margin: 1.5rem 0;
   }
 
   .nav-links li a {
-    font-size: 1.2rem;
-    padding: 0.5rem 1.5rem;
+    font-size: 18px;
   }
 
-  .nav-links li a:hover {
-    color: var(--gold-hover);
-    background-color: rgba(212, 175, 55, 0.1);
-  }
+  /* OVERLAY */
   .menu-overlay {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 998;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: 0.3s;
   }
-  
+
   .menu-overlay.active {
     opacity: 1;
     visibility: visible;
   }
-  
-  .nav-links {
-    z-index: 999;
-  }
-  
+
   .no-scroll {
     overflow: hidden;
   }
-  
+  .navbar.scrolled {
+  background: rgba(0, 0, 0, 0.95);
+  padding: 0.7rem 0;
+}
+
+.navbar {
+  transition: all 0.3s ease;
+}
+}
+
+@media (max-width: 600px) {
+  .navbar-container {
+    padding: 10px 15px;
+  }
+
+  .logo-main {
+    font-size: 1.4rem;
+  }
+
+  .logo-sub {
+    font-size: 0.6rem;
+  }
 }

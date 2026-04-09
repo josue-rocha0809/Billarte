@@ -157,7 +157,7 @@ export const poolTables = [
         id: 23,
         type:"pool",
         title: "Urus",
-        image: "/assets/poolTables/urus.jpeg",
+        image: "/assets/poolTables/urus.png",
         description: "Lujo moderno con inspiración automotriz.",  
       },
       {

@@ -7,7 +7,9 @@
   border: 0;
   box-sizing: border-box;
 }
-
+body {
+  background-color: #f8f6f3;
+}
 html, body, #root {
   width: 100%;
   min-height: 100vh;
@@ -18,4 +20,11 @@ body, div, nav, section, main, footer {
   outline: none !important;
   box-shadow: none !important;
   border: none !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-tap-highlight-color: transparent;
 }

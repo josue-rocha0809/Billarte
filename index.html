@@ -1,41 +1,52 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/letrab.svg" />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- RESPONSIVE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- GOOGLE VERIFY -->
     <meta name="google-site-verification" content="OiT35sxY-u3qNE_EBrzm-JZwTVAlaVMt7t8cuMUmjw0" />
 
-    <title>Billarte - Arte y estilo</title>
-    <meta name="description" content="Billarte tu lo imaginas, nosotros lo creamos. Envíos a todo México.">
-    <meta name="keywords" content="billar, mesas de billar, mesas de juego, billares zapopan, mesas de billar en mexico, venta de mesas de billar.">
-    <!-- Open Graph / Facebook / WhatsApp -->
+    <!-- SEO -->
+    <title>Mesas de billar y personalización en México | Billarte</title>
+
+    <meta name="description" 
+      content="Compra mesas de billar en México con diseños personalizados. También ofrecemos futbolitos y mesas de hockey con envíos a todo el país." 
+    />
+
+    <!-- OPEN GRAPH -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://billarte.com/" />
-    <meta property="og:title" content="Billarte - Arte y estilo" />
-    <meta property="og:description" content="Billarte: tú lo imaginas, nosotros lo creamos. Mesas de billar y de juego, con envíos a todo México." />
+    <meta property="og:title" content="Mesas de billar y personalización en México | Billarte" />
+    <meta property="og:description" content="Mesas de billar personalizadas, futbolitos y hockey." />
     <meta property="og:image" content="https://billarte.com/preview.jpg" />
-    <meta property="og:site_name" content="Billarte" />
 
-    <!-- Twitter (opcional, pero recomendado) -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://billarte.com/" />
-    <meta name="twitter:title" content="Billarte - Arte y estilo" />
-    <meta name="twitter:description" content="Billarte: tú lo imaginas, nosotros lo creamos. Mesas de billar y de juego, con envíos a todo México." />
-    <meta name="twitter:image" content="https://billarte.com/preview.jpg" />
+    <!-- SCHEMA (CORREGIDO) -->
     <script type="application/ld+json">
-  {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Billarte",
-  "url": "https://billarte.com"
-  }
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Billarte",
+      "url": "https://billarte.com",
+      "description": "Mesas de billar en México, futbolitos y hockey",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Zapopan",
+        "addressRegion": "Jalisco",
+        "addressCountry": "MX"
+      }
+    }
     </script>
 
     <link rel="stylesheet" href="./src/index.css" />
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
