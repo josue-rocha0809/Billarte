@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/letrab.svg" />
 
-    <!-- FUENTES -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!-- FUENTES (preconnect para velocidad) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- RESPONSIVE -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,34 +15,107 @@
     <!-- GOOGLE VERIFY -->
     <meta name="google-site-verification" content="OiT35sxY-u3qNE_EBrzm-JZwTVAlaVMt7t8cuMUmjw0" />
 
-    <!-- SEO -->
-    <title>Mesas de billar y personalización en México | Billarte</title>
+    <!-- SEO PRINCIPAL -->
+    <title>Mesas de Billar en México | Billarte — Envíos a Toda la República</title>
+    <meta name="description"
+      content="Billarte fabrica mesas de billar, futbolitos, ping pong, carambola y hockey de aire a la medida. Diseños exclusivos y envíos a toda la República Mexicana. Solicita tu cotización por WhatsApp." />
+    <meta name="keywords"
+      content="mesas de billar México, comprar mesa de billar, venta de mesas de billar, mesa de billar a medida, mesa de billar profesional, futbolito de lujo, futbolitos México, mesa de ping pong México, mesa de carambola, hockey de aire México, mesas de juego México, Billarte" />
+    <meta name="robots" content="index, follow" />
 
-    <meta name="description" 
-      content="Compra mesas de billar en México con diseños personalizados. También ofrecemos futbolitos y mesas de hockey con envíos a todo el país." 
-    />
+    <!-- CANONICAL -->
+    <link rel="canonical" href="https://www.billarte.com/" />
 
     <!-- OPEN GRAPH -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://billarte.com/" />
-    <meta property="og:title" content="Mesas de billar y personalización en México | Billarte" />
-    <meta property="og:description" content="Mesas de billar personalizadas, futbolitos y hockey." />
-    <meta property="og:image" content="https://billarte.com/preview.jpg" />
+    <meta property="og:type"        content="website" />
+    <meta property="og:url"         content="https://www.billarte.com/" />
+    <meta property="og:title"       content="Mesas de Billar en México | Billarte" />
+    <meta property="og:description" content="Fabricamos mesas de billar, futbolitos, ping pong, carambola y hockey de aire a la medida. Diseños exclusivos con envíos a toda la República Mexicana." />
+    <meta property="og:image"       content="https://www.billarte.com/preview.jpg" />
+    <meta property="og:locale"      content="es_MX" />
+    <meta property="og:site_name"   content="Billarte" />
 
-    <!-- SCHEMA (CORREGIDO) -->
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:title"       content="Mesas de Billar en México | Billarte" />
+    <meta name="twitter:description" content="Fabricamos mesas de billar, futbolitos, ping pong, carambola y hockey de aire a la medida. Envíos a toda la República Mexicana." />
+    <meta name="twitter:image"       content="https://www.billarte.com/preview.jpg" />
+
+    <!-- SCHEMA: FurnitureStore (envíos a todo México) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": "FurnitureStore",
       "name": "Billarte",
-      "url": "https://billarte.com",
-      "description": "Mesas de billar en México, futbolitos y hockey",
+      "url": "https://www.billarte.com",
+      "logo": "https://www.billarte.com/letrab.svg",
+      "image": "https://www.billarte.com/preview.jpg",
+      "description": "Fabricamos mesas de billar, futbolitos, ping pong, carambola y hockey de aire a la medida, con envíos a toda la República Mexicana.",
+      "telephone": "+52-33-3256-0059",
+      "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Zapopan",
         "addressRegion": "Jalisco",
         "addressCountry": "MX"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 20.7214,
+        "longitude": -103.3861
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "México"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "14:00"
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+52-33-3256-0059",
+        "contactType": "customer service",
+        "areaServed": "MX",
+        "availableLanguage": "Spanish"
+      },
+      "sameAs": [
+        "https://www.instagram.com/billarte",
+        "https://www.tiktok.com/@billarte"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Catálogo Billarte",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Mesas de Billar" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Futbolitos" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Mesas de Ping Pong" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Mesas de Cartas" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Mesas de Carambola" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Mesas de Hockey de Aire" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Accesorios para Billar" } }
+        ]
       }
+    }
+    </script>
+
+    <!-- SCHEMA: WebSite con SearchAction -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Billarte",
+      "url": "https://www.billarte.com"
     }
     </script>
 

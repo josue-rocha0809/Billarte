@@ -1,26 +1,36 @@
-/* App.css */
 .app-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; 
-    border: 5px solid red
-  }
-  
-  .main-content {
-    flex: 1; /* Hace que el contenido principal ocupe todo el espacio disponible */
-    padding-top: 0px !important ; /* Espaciado opcional */
-    border: 5px solid red
-  }
-  html {
-  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--dark-1);
 }
 
-body {
-  -webkit-tap-highlight-color: transparent;
+.main-content {
+  flex: 1;
+  padding-top: 108px; /* topbar (34px) + gold line (2px) + container (72px) */
 }
-  
-  @media (min-width: 768px) {
-    .main-content {
-      padding-top: 80px; 
-    }
+
+/* Home page doesn't need nav offset — carousel is full-bleed */
+.main-content:has(.home-wrapper) {
+  padding-top: 0;
+}
+
+@media (max-width: 1100px) {
+  .main-content {
+    padding-top: 104px; /* topbar (30px) + gold line (2px) + container (72px) */
   }
+
+  .main-content:has(.home-wrapper) {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    padding-top: 96px; /* topbar (30px) + gold line (2px) + container (64px) */
+  }
+
+  .main-content:has(.home-wrapper) {
+    padding-top: 0;
+  }
+}

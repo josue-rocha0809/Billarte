@@ -1,147 +1,238 @@
-/* CONTENEDOR GENERAL */
-.gallery-container {
-  margin-top: 120px;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 20px;
+/* ════════════════════════════════════════════
+   GALLERY PAGE — LUXURY DARK THEME
+════════════════════════════════════════════ */
+
+.gallery-page {
+  background: var(--dark-1);
+  min-height: 100vh;
+}
+
+/* SECTION LABEL */
+.gallery-section-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+/* SECTION INTRO */
+.gallery-intro {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 64px 6% 0;
+}
+
+.gallery-intro h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  color: var(--off-white);
+  margin-bottom: 14px;
+  line-height: 1.25;
+}
+
+.gallery-intro p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.925rem;
+  color: var(--text-sec);
+  line-height: 1.75;
+  max-width: 620px;
+}
+
+.gallery-intro-divider {
+  width: 48px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+  margin: 24px 0;
 }
 
 /* GRID */
+.gallery-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 48px 6% 100px;
+}
+
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 25px;
-  padding: 1rem 0;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 28px;
 }
 
-/* TARJETA */
+/* CARD */
 .gallery-item {
-  background: #fff;
-  border-radius: 14px;
+  background: var(--dark-2);
+  border: 1px solid var(--border-gold);
+  border-radius: 2px;
   overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
   cursor: pointer;
+  transition:
+    border-color 0.38s ease,
+    transform 0.38s ease,
+    box-shadow 0.38s ease;
 }
-
 
 .gallery-item:hover {
+  border-color: var(--gold-dim);
   transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
 }
 
-/* CONTENEDOR DE IMAGEN */
+/* IMAGE AREA */
 .gallery-image-container {
-  width: 100%;
-  height: 220px;
+  position: relative;
+  height: 270px;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f4f4f4;
+  background: #0f0f0f;
 }
 
-/* IMAGEN */
 .gallery-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-  transition: transform 0.4s ease;
+  transition: transform 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-/* EFECTO HOVER EN IMAGEN */
 .gallery-item:hover .gallery-image {
-  transform: scale(1.08);
+  transform: scale(1.07);
 }
 
-/* INFO */
+/* HOVER OVERLAY */
+.gallery-item-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.38s ease;
+}
+
+.gallery-item:hover .gallery-item-overlay {
+  background: rgba(0, 0, 0, 0.38);
+}
+
+.gallery-item-overlay-text {
+  opacity: 0;
+  color: var(--gold);
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  border: 1px solid var(--gold);
+  padding: 11px 26px;
+  transition: opacity 0.38s ease, transform 0.38s ease;
+  transform: translateY(8px);
+}
+
+.gallery-item:hover .gallery-item-overlay-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* CARD INFO */
 .gallery-info {
-  padding: 15px;
-  background: #fff;
+  padding: 22px 24px 26px;
+  border-top: 1px solid var(--border-gold);
 }
 
-/* TÍTULO PRODUCTO */
 .gallery-info h3 {
   font-family: 'Playfair Display', serif;
-  font-size: 18px;
-  margin-bottom: 5px;
-  color: #1a1a1a;
+  font-size: 1.1rem;
+  color: var(--off-white);
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
 }
 
-/* DESCRIPCIÓN */
 .gallery-info p {
   font-family: 'Poppins', sans-serif;
-  font-size: 14px;
-  color: #666;
-  line-height: 1.5;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.65;
 }
 
-/* TITULO PRINCIPAL */
-.gallery-container h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 40px;
-  margin-bottom: 10px;
-  color: #1a1a1a;
-  letter-spacing: 1px;
+/* FEATURED STRIP (Pool page only) */
+.featured-strip {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 6% 40px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.featured-strip::-webkit-scrollbar { display: none; }
+
+.featured-strip-inner {
+  display: flex;
+  gap: 20px;
+  min-width: max-content;
 }
 
-/* LINEA DECORATIVA (lujo) */
-.gallery-container h1::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: #d4af37;
-  margin-top: 10px;
+.featured-card {
+  position: relative;
+  width: 220px;
+  height: 140px;
+  border-radius: 2px;
+  overflow: hidden;
+  border: 1px solid var(--border-gold);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: border-color 0.3s, transform 0.3s;
 }
 
-/* TEXTO GENERAL */
-.gallery-container p {
+.featured-card:hover {
+  border-color: var(--gold-dim);
+  transform: scale(1.03);
+}
+
+.featured-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured-card-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px 12px;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
   font-family: 'Poppins', sans-serif;
-  color: #555;
-  line-height: 1.6;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
 }
 
-/* RESPONSIVE */
-@media (max-width: 600px) {
+/* ════════════════════════════════════════════
+   RESPONSIVE
+════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  .gallery-intro {
+    padding: 40px 5% 0;
+  }
 
   .gallery-container {
-    padding: 10px;
-    margin-top: 70px
+    padding: 32px 5% 72px;
   }
 
   .gallery-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 18px;
   }
 
-  .gallery-item {
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-    transition: transform 0.2s ease;
-  }
-
-  .gallery-item:active {
-    transform: scale(0.97);
-  }
-
   .gallery-image-container {
-    height: 200px;
+    height: 220px;
   }
+}
 
-  .gallery-info {
-    padding: 14px;
-  }
-
-  .gallery-info h3 {
-    font-size: 18px;
-  }
-
-  .gallery-info p {
-    font-size: 14px;
-    color: #666;
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
   }
 }

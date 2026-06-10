@@ -1,130 +1,202 @@
-/* OVERLAY */
+/* ════════════════════════════════════════════
+   LUXURY MODAL
+════════════════════════════════════════════ */
+
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.93);
+  backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  padding: 16px;
 }
 
-/* CONTENEDOR */
 .modal-content {
-  background: #fff;
-  border-radius: 16px;
-  width: 90%;
-  max-width: 1000px;
-  max-height: 90vh;
+  background: #111;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  width: 100%;
+  max-width: 1020px;
+  max-height: 92vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.25fr 1fr;
   overflow: hidden;
-  animation: fadeIn 0.3s ease;
+  animation: modalReveal 0.42s cubic-bezier(0.22, 1, 0.36, 1);
   position: relative;
 }
 
-/* ANIMACIÓN */
-@keyframes fadeIn {
+@keyframes modalReveal {
   from {
     opacity: 0;
-    transform: scale(0.95);
+    transform: scale(0.94) translateY(24px);
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1) translateY(0);
   }
 }
 
-/* IMAGEN */
+/* IMAGE SIDE */
 .modal-image-container {
-  background: #f4f4f4;
+  background: #0a0a0a;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 420px;
+  overflow: hidden;
 }
 
 .modal-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
 }
 
-/* INFO */
+/* INFO SIDE */
 .modal-info {
-  padding: 25px;
+  padding: 52px 44px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: #141414;
+  border-left: 1px solid rgba(212, 175, 55, 0.12);
+  overflow-y: auto;
+}
+
+.modal-collection-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #d4af37;
+  margin-bottom: 18px;
 }
 
 .modal-info h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  margin-bottom: 10px;
+  font-size: clamp(1.7rem, 3.5vw, 2.5rem);
+  color: #f0ece4;
+  line-height: 1.15;
+  margin-bottom: 12px;
+  letter-spacing: -0.2px;
+}
+
+.modal-divider {
+  width: 40px;
+  height: 1px;
+  background: linear-gradient(90deg, #d4af37, transparent);
+  margin: 18px 0 20px;
 }
 
 .modal-info p {
   font-family: 'Poppins', sans-serif;
-  color: #555;
-  line-height: 1.6;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.58);
+  line-height: 1.78;
+  margin-bottom: 32px;
 }
 
-/* BOTÓN */
+/* WHATSAPP BUTTON */
 .modal-button {
-  margin-top: 20px;
-  padding: 14px;
+  display: inline-block;
+  padding: 15px 30px;
   background: #d4af37;
   color: #000;
   border: none;
-  border-radius: 10px;
-  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background 0.22s ease, transform 0.18s ease;
+  align-self: flex-start;
 }
 
 .modal-button:hover {
-  transform: scale(1.05);
-  background: #c19b2e;
+  background: #e8c547;
+  transform: translateY(-2px);
 }
 
-/* CERRAR */
+/* CLOSE BUTTON */
 .close-button {
   position: absolute;
-  top: 15px;
-  right: 15px;
-  background: rgba(0,0,0,0.6);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 38px;
-  height: 38px;
-  font-size: 20px;
+  top: 14px;
+  right: 14px;
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.22);
+  color: rgba(255, 255, 255, 0.7);
+  width: 34px;
+  height: 34px;
+  font-size: 16px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  z-index: 2;
 }
 
-/* CONTROLES */
+.close-button:hover {
+  background: rgba(212, 175, 55, 0.25);
+  color: #fff;
+  border-color: rgba(212, 175, 55, 0.55);
+}
+
+/* CAROUSEL CONTROLS */
 .carousel-controls {
-  margin-top: 15px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 14px;
+  margin-top: 22px;
 }
 
 .carousel-button {
-  background: none;
-  border: none;
-  font-size: 24px;
+  width: 36px;
+  height: 36px;
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  color: #d4af37;
+  font-size: 15px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.carousel-button:hover {
+  background: rgba(212, 175, 55, 0.22);
+  border-color: rgba(212, 175, 55, 0.6);
+}
+
+.carousel-controls span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
   .modal-content {
     grid-template-columns: 1fr;
+    max-height: 95vh;
   }
 
-  .modal-image {
-    height: 300px;
+  .modal-image-container {
+    min-height: 280px;
+    max-height: 50vw;
+  }
+
+  .modal-info {
+    padding: 32px 24px;
+    border-left: none;
+    border-top: 1px solid rgba(212, 175, 55, 0.12);
   }
 }

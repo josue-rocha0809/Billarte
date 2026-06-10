@@ -1,14 +1,15 @@
 import { Routes, Route } from "react-router-dom";
-import { Billar } from "./pages/Billar";
-import { Carambola } from "./pages/Carambola";
-import { Futbolitos } from "./pages/Futbolitos";
-import { Hockey } from "./pages/Hockey";
-import { Cartas } from "./pages/Cartas";
+import { Pool }    from "./pages/Pool";
+import { Soccer }  from "./pages/Soccer";
 import { PingPong } from "./pages/PingPong";
-import { Navbar } from "./components/Navbar/Navbar";
-import { Extras } from "./pages/Extras";
-import { Footer } from "./components/Footer/Footer";
-import "./App.css"; // Asegúrate de crear este archivo
+import { Cards }   from "./pages/Cards";
+import { Carom }   from "./pages/Carom";
+import { Hockey }  from "./pages/Hockey";
+import { Extras }  from "./pages/Extras";
+import { Home }    from "./pages/Home";
+import { Navbar }  from "./components/Navbar/Navbar";
+import { Footer }  from "./components/Footer/Footer";
+import "./App.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -16,10 +17,7 @@ import { useEffect } from "react";
 
 export default function App() {
   useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: true,
-    });
+    AOS.init({ duration: 900, once: true, easing: "ease-out-cubic" });
   }, []);
 
   return (
@@ -27,14 +25,14 @@ export default function App() {
       <Navbar />
       <div className="main-content">
         <Routes>
-          <Route path="/" element={<Billar />} />
-          <Route path="/mesas-de-billar" element={<Billar />} />
-          <Route path="/futbolitos" element={<Futbolitos />} />
-          <Route path="/ping-pong" element={<PingPong />} />
-          <Route path="/mesas-cartas" element={<Cartas />} />
-          <Route path="/carambola" element={<Carambola />} />
-          <Route path="/hockey" element={<Hockey />} />
-          <Route path="/extras" element={<Extras />} />
+          <Route path="/"                element={<Home />} />
+          <Route path="/mesas-de-billar" element={<Pool />} />
+          <Route path="/futbolitos"      element={<Soccer />} />
+          <Route path="/ping-pong"       element={<PingPong />} />
+          <Route path="/mesas-cartas"    element={<Cards />} />
+          <Route path="/carambola"       element={<Carom />} />
+          <Route path="/hockey"          element={<Hockey />} />
+          <Route path="/extras"          element={<Extras />} />
         </Routes>
       </div>
       <Footer />

@@ -1,10 +1,10 @@
-  // extras.js
+﻿  // extras.js
   export const extrasTables = [
     {
       id: 1,
       type: "extras",
       title: "Bolas Personalizadas",
-      image: "/assets/extras/bolasPersonalizadas.png",
+      image: "/images/extras/bolasPersonalizadas.png",
       description: "Set de bolas de billar con diseños personalizados.",
     },
     {
@@ -13,11 +13,11 @@
       title: "Conversión Carambola",
       images: [
         {
-          image: "/assets/extras/conversionCarambola.png",
+          image: "/images/extras/conversionCarambola.png",
           description: "Kit de conversión para juego de carambola."
         },
         {
-          image: "/assets/extras/conversionCarambola2.png",
+          image: "/images/extras/conversionCarambola2.png",
           description: "Segundo modelo de kit de conversión para carambola."
         }
       ],
@@ -27,14 +27,14 @@
       id: 4,
       type: "extras",
       title: "Cubierta Multijuegos",
-      image: "/assets/extras/cubiertaMultiJuegos.png",
+      image: "/images/extras/cubiertaMultiJuegos.png",
       description: "Cubierta adaptable para diferentes juegos de mesa.",
     },
     {
       id: 5,
       type: "extras",
       title: "Dardera con Cubierta de Madera",
-      image: "/assets/extras/darderaConCubiertaDeMadera.png",
+      image: "/images/extras/darderaConCubiertaDeMadera.png",
       description: "Juego de dardos con cubierta de madera premium.",
     },
     {
@@ -43,15 +43,15 @@
       title: "Paños Personalizados",
       images: [
         {
-          image: "/assets/extras/panosPersonalizados2.png",
+          image: "/images/extras/panosPersonalizados2.png",
           description: "Kit de conversión para juego de carambola."
         },
         {
-          image: "/assets/extras/panosPersonalizados3.png",
+          image: "/images/extras/panosPersonalizados3.png",
           description:  "Tercera colección de paños personalizados.",
         },
         {
-          image: "/assets/extras/panosPersonalizas.png",
+          image: "/images/extras/panosPersonalizas.png",
           description:  "Variedad de paños con personalización única",
         }
       ],
@@ -62,7 +62,7 @@
       id: 9,
       type: "extras",
       title: "Ruedo de Bolas",
-      image: "/assets/extras/ruedoDeBolas.png",
+      image: "/images/extras/ruedoDeBolas.png",
       description: "Ruedo clásico para organizar bolas de billar.",
     },
     {
@@ -71,11 +71,11 @@
       title: "Ruedo de Bolas de Lujo",
       images: [
         {
-          image: "/assets/extras/ruedoDeBolasDeLujo.png",
+          image: "/images/extras/ruedoDeBolasDeLujo.png",
           description: "Versión premium del ruedo de bolas con acabados finos.",
         },
         {
-          image: "/assets/extras/ruedoDeBolasDeLujo2.png",
+          image: "/images/extras/ruedoDeBolasDeLujo2.png",
           description: "Segundo modelo de ruedo de lujo con mejoras.",
         },
       ],
@@ -85,28 +85,28 @@
       id: 12,
       type: "extras",
       title: "Tacos Desarmables",
-      image: "/assets/extras/tacosDesarmables.png",
+      image: "/images/extras/tacosDesarmables.png",
       description: "Tacos de billar con diseño desarmable para transporte.",
     },
     {
       id: 13,
       type: "extras",
       title: "Taqueras Personalizadas",
-      image: "/assets/extras/taquerasPersonalizadas.png",
+      image: "/images/extras/taquerasPersonalizadas.png",
       description: "Porta tacos con diseños personalizados.",
     },
     {
       id: 14,
       type: "extras",
       title: "Taquero de Lujo",
-      image: "/assets/extras/taqueroDeLujoTerminadoEnAltoBrillo.png",
+      image: "/images/extras/taqueroDeLujoTerminadoEnAltoBrillo.png",
       description: "Taquero premium con acabado en alto brillo.",
     },
     {
       id: 15,
       type: "extras",
       title: "Triángulo de Lujo",
-      image: "/assets/extras/trianguloDeLujo.png",
+      image: "/images/extras/trianguloDeLujo.png",
       description: "Triángulo para billar con materiales premium.",
     },
   ];

@@ -1,41 +1,143 @@
 .footer {
-    background-color: #000;
-    color: #d4af37;
-    padding: 20px;
-    text-align: center;
-    font-family: 'Georgia', serif;
-    border-top: 2px solid #d4af37;
+  background: #0a0a0a;
+  border-top: 1px solid rgba(212, 175, 55, 0.18);
+  padding: 56px 8% 36px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 48px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+/* LOGO SECTION */
+.footer-brand {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d4af37;
+  letter-spacing: 3px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.footer-tagline {
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+/* LINKS */
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links h4 {
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #d4af37;
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* CONTACT */
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 200px;
+}
+
+.footer-contact h4 {
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #d4af37;
+  margin-bottom: 4px;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-icons a {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  transition: color 0.22s ease;
+}
+
+.footer-icons a:hover {
+  color: #d4af37;
+}
+
+.icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+/* BOTTOM BAR */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-copy {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.28);
+  letter-spacing: 0.5px;
+}
+
+.footer-copy span {
+  color: #d4af37;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 48px 5% 32px;
   }
-  
-  .footer-logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+
+  .footer-top {
+    flex-direction: column;
+    gap: 32px;
   }
-  
-  .footer-icons {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-  }
-  
-  .footer-icons a {
-    color: #d4af37;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
     gap: 8px;
-    font-size: 1rem;
-    transition: transform 0.2s ease;
   }
-  
-  .footer-icons a:hover {
-    transform: scale(1.05);
-    color: #fff;
-  }
-  
-  .icon {
-    font-size: 1.4rem;
-  }
-  
+}
