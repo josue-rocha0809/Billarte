@@ -51,23 +51,33 @@ const categories = [
 const reasons = [
   {
     icon: "◆",
-    title: "Fabricación a Medida",
-    text: "Cada mesa se fabrica con tus especificaciones: dimensiones, colores, paños y acabados.",
+    title: "Fabricación",
+    text: "No fabricamos mesas de juego, esculpimos piezas de arte únicas. Cada diseño es una declaración de estatus y exclusividad, pensado minuciosamente para integrarse en los espacios más sofisticados.",
   },
   {
     icon: "◆",
-    title: "Calidad Premium",
-    text: "Maderas nobles, paños profesionales y herrajes de alta resistencia en cada pieza.",
+    title: "Calidad",
+    text: "Combinamos los diseños más exclusivos con materiales de alta gama: maderas texturizadas, diseños personalizados y finas aplicaciones de oro y otros materiales premium.",
   },
   {
     icon: "◆",
-    title: "Envío a Todo México",
-    text: "Entregamos en Guadalajara, CDMX y toda la República. Coordinamos la instalación.",
+    title: "Envío",
+    text: "Protección absoluta hasta su espacio, sin importar fronteras. Desplegamos un sistema de traslado especializado y de alta seguridad para garantizar que su pieza llegue impecable a cualquier rincón del país o del extranjero.",
   },
   {
     icon: "◆",
-    title: "Atención Directa",
-    text: "Asesoría personalizada por WhatsApp antes, durante y después de tu compra.",
+    title: "Instalación",
+    text: "Montaje experto por los mejores instaladores de México. Una obra de arte exige una instalación perfecta: nuestro equipo se traslada hasta su ubicación para realizar la instalación, nivelación milimétrica y la entrega final.",
+  },
+  {
+    icon: "◆",
+    title: "Atención",
+    text: "Acompañamiento en cada decisión. Desde el primer boceto de su pieza personalizada hasta el cuidado años después de su compra, cuenta con atención directa y especializada en todo momento, guiando cada detalle para que su pieza sea un reflejo exacto de su estilo.",
+  },
+  {
+    icon: "◆",
+    title: "Diseño a la Medida y Personalización",
+    text: "Su visión protegida por expertos. Crear una pieza única requiere precisión y confianza: cuidamos cada paso de la selección de materiales y acabados para que su proyecto esté respaldado por los mejores profesionales en alta gama y exclusividad del mercado.",
   },
 ];
 
