@@ -30,13 +30,13 @@ export const Pool = () => {
   return (
     <div className="gallery-page">
       <SEO
-        title="Mesas de Billar en México | Fabricación a Medida — Billarte"
-        description="Mesas de billar profesionales y residenciales hechas a mano. Diseños exclusivos, maderas finas y paños premium. Envíos a toda la República Mexicana. Solicita tu cotización."
+        title="Mesas de Billar en Guadalajara, Zapopan y México | Billarte"
+        description="Mesas de billar a medida en Guadalajara, Zapopan y toda México. Diseños profesionales y residenciales, maderas finas y paños premium. Cotiza por WhatsApp."
         path="/mesas-de-billar"
       />
       <PageHero
         title="Mesas de Billar"
-        subtitle="Fabricadas a mano en México — diseños únicos para quienes exigen lo mejor."
+        subtitle="Fabricadas a mano en Guadalajara y Zapopan, con envíos a toda México — diseños únicos para quienes exigen lo mejor."
         image="/images/pool/ginevra.png"
         label="Colección Premium"
       />

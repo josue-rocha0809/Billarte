@@ -75,8 +75,8 @@ export const Home = () => {
   return (
     <main className="home-wrapper">
       <SEO
-        title="Mesas de Billar, Futbolitos y Más en México | Billarte"
-        description="Fabricamos mesas de billar, futbolitos, ping pong, carambola y hockey de aire a la medida. Diseños premium con envíos a toda la República Mexicana. Cotiza por WhatsApp."
+        title="Mesas de Billar en Guadalajara y México | Billarte"
+        description="Fabricamos mesas de billar, futbolitos, ping pong, carambola y hockey de aire a la medida en Guadalajara, Zapopan y toda México. Diseños premium. Cotiza por WhatsApp."
         path="/"
       />
       <Carousel />
