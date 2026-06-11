@@ -2,7 +2,7 @@
 
 ## Business Context
 **Billarte** is a billiard table and game equipment company based in **Zapopan, Jalisco, México**.
-- Primary goal: get visitors to **contact via WhatsApp** (+52 33 3256-0059)
+- Primary goal: get visitors to **contact via WhatsApp** (+52 33 2983 3915)
 - No prices are shown — visitors request a quote
 - Sells and ships nationwide (Mexico); local market is Guadalajara/Zapopan
 - Brand name = Billar + Arte (billiards + art)
@@ -96,7 +96,7 @@ billarte/
 - **Dark:** `#1a1a1a`
 - **Heading font:** Playfair Display (serif, 700)
 - **Body font:** Poppins (400, 500, 600)
-- **WhatsApp number:** `+52 33 3256-0059`
+- **WhatsApp number:** `+52-33-2983-3915`
 
 ## SEO Notes
 - `index.html` has full LocalBusiness schema, OpenGraph, Twitter Card

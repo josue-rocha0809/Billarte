@@ -31,9 +31,9 @@ export const Footer = () => {
         <div className="footer-contact">
           <h4>Contáctanos</h4>
           <div className="footer-icons">
-            <a href="https://wa.me/523332560059" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/523329833915" target="_blank" rel="noopener noreferrer">
               <FaWhatsapp className="icon" />
-              <span>33 3256 0059</span>
+              <span>33 2983 3915</span>
             </a>
             <a href="https://wa.me/523314507923" target="_blank" rel="noopener noreferrer">
               <FaWhatsapp className="icon" />

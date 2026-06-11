@@ -157,7 +157,7 @@ export const Home = () => {
           <h2>¿Listo para tu mesa ideal?</h2>
           <p>Contáctanos por WhatsApp — asesoría sin costo y cotización en minutos</p>
           <a
-            href="https://wa.me/523332560059?text=Hola, me gustaría información sobre sus mesas"
+            href="https://wa.me/523329833915?text=Hola, me gustaría información sobre sus mesas"
             target="_blank"
             rel="noopener noreferrer"
             className="cta-btn"

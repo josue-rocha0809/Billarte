@@ -53,7 +53,7 @@ export const ImageModal = ({ isOpen, item, onClose }) => {
         <p>{images[currentIndex]?.description || item.description}</p>
 
         <a
-          href={`https://wa.me/523332560059?text=Hola, me interesa la ${item.title}`}
+          href={`https://wa.me/523329833915?text=Hola, me interesa la ${item.title}`}
           target="_blank"
           rel="noopener noreferrer"
         >

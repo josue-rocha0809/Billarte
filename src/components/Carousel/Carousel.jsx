@@ -83,7 +83,7 @@ export const Carousel = () => {
             Ver colección
           </Link>
           <a
-            href="https://wa.me/523332560059?text=Hola, me interesa conocer sus productos"
+            href="https://wa.me/523329833915?text=Hola, me interesa conocer sus productos"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-outline"

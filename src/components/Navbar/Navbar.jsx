@@ -15,7 +15,7 @@ const links = [
   { to: "/extras",          label: "Accesorios" },
 ];
 
-const WA_URL = "https://wa.me/523332560059?text=Hola, quiero cotizar una mesa";
+const WA_URL = "https://wa.me/523329833915?text=Hola, quiero cotizar una mesa";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,8 +51,8 @@ export const Navbar = () => {
         {/* TOPBAR */}
         <div className="navbar-topbar">
           <div className="navbar-topbar-inner">
-            <a href="https://wa.me/523332560059" target="_blank" rel="noopener noreferrer" className="topbar-phone">
-              <FiPhone /> 33 3256-0059
+            <a href="https://wa.me/523329833915" target="_blank" rel="noopener noreferrer" className="topbar-phone">
+              <FiPhone /> 33 2983 3915
             </a>
             <span className="topbar-sep">|</span>
             <a href="https://wa.me/523314507923" target="_blank" rel="noopener noreferrer" className="topbar-phone">
