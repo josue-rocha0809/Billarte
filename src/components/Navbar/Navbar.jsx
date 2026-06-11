@@ -56,7 +56,7 @@ export const Navbar = () => {
             </a>
             <span className="topbar-sep">|</span>
             <a href="https://wa.me/523314507923" target="_blank" rel="noopener noreferrer" className="topbar-phone">
-              <FiPhone /> 33 1450-7923
+              <FiPhone /> 33 1450 7923
             </a>
           </div>
         </div>
